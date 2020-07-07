@@ -1,0 +1,63 @@
+.headerWrapper {
+  margin-top: 156px;
+
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+  }
+}
+header {
+  background-color: white;
+  vertical-align: top;
+  padding: 0px 20px;
+  box-shadow: 0 0 10px 0px var(--bluish-gray);
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  line-height: 45px;
+
+  .logo {
+    height: 140px;
+    object-fit: contain;
+    object-position: top;
+
+    @media (max-width: 768px) {
+      height: 80px;
+    }
+  }
+
+  .name {
+    font-size: 34px;
+    margin: 33px 20px;
+    vertical-align: top;
+    display: inline-block;
+
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      margin: 10px;
+    }
+  }
+
+  .objective {
+    font-size: 18px;
+    display: block;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+      line-height: 10px;
+    }
+  }
+
+  .cert {
+    float: right;
+    margin: 30px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.modal-portal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100000;
+  display: flex;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+.closeIcon {
+  padding: 5px 10px;
+    float: right;
+    position: relative;
+    top: -20px;
+    right: -20px;
+    font-size: 20px;
+    cursor: pointer;
+
+    
+}
+.modal-container {
+  overflow: scroll;
+  margin: 0 auto;
+  width: 75%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 14px 45px, rgba(0, 0, 0, 0.2) 0 10px 18px;
+  padding: 40px;
+  position: relative;
+  align-self: center;
+  max-height: 80%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.action-btns {
+  text-align: right;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  .modal-container {
+    padding: 10px;
+  }
+
+  .closeIcon {
+    top: -10px;
+  right: -10px;
+  }
+}
